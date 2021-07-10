@@ -18,8 +18,8 @@
 ### 可增强方向
 1. 如何实现通信安全？请使用TLS/SSL传输层安全机制实现。
 2. 如何实现业务安全？要求使用Spring Security实现！
-a) 实现安全用户认证（用户名与密码方式）非系统认证用户，仅可访问主页”index.jsp”和登陆页面”/login.jsp”等静态页面。
 
+a) 实现安全用户认证（用户名与密码方式）非系统认证用户，仅可访问主页”index.jsp”和登陆页面”/login.jsp”等静态页面。</br>
 b) 实现基于角色的访问控制策略：仅管理员角色（ROLE_ADMIN）可访问“获取系统用户列表“业务，并可访问” 查看用户详细信息“业务，查看任何用户信息；其他认证用户，均可访问” 查看用户详细信息“业务，但是仅能查看本用户的信息。
 
 3. 如何使用数字证书进行用户验证（替代用户名/密码机制），分析该机制的安全性，可用性等（依赖Spring Security实现）
@@ -30,7 +30,7 @@ b) 实现基于角色的访问控制策略：仅管理员角色（ROLE_ADMIN）�
 
 
 ### 项目代码
-[infosec](/java_ee_web/source)
+[项目源代码](https://github.com/HeXavi8/Info-Sec/tree/main/java_ee_web/source)
 
 ### 部分改进demo
 * 涉及到jsrsasign的引用进行模拟数字证书加签验签和加密解密过程。
@@ -40,4 +40,5 @@ b) 实现基于角色的访问控制策略：仅管理员角色（ROLE_ADMIN）�
 * 等等
 
 注意配置database.properties文件
-[demo](/java_ee_web/infosec)
+
+[demo](https://github.com/HeXavi8/Info-Sec/tree/main/java_ee_web/infosec)
