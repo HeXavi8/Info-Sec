@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!--引入外部的配置文件-->
+	<properties resource="database.properties"></properties>
+
+	<!--配置Mybatis的日志及参数-->
+	<settings>
+		<setting name="useGeneratedKeys" value="true" />
+		<setting name="defaultExecutorType" value="REUSE" />
+		<setting name="lazyLoadingEnabled" value="false" />
+		<setting name="aggressiveLazyLoading" value="true" />
+	</settings>
+
+	<!--引入类型别名-->
+	<typeAliases>
+		<typeAlias type="infosec.model.User" alias="User"/>
+	</typeAliases>
+
+	<!--默认的环境使用development-->
+	<environments default="development">
+		<!--环境：development-->
+		<environment id="development">
+			<!--事务管理使用JDBC（还可以使用MANAGED,但一般不用）-->
+			<transactionManager type="JDBC"/>
+			<!--数据源使用连接池，使数据库链接不关闭，web可以快速读取数据-->
+			<dataSource type="POOLED">
+				<property name="driver" value="${jdbc.driverClassName}"/>
+				<property name="url" value="${url}"/>
+				<property name="username" value="${username}"/>
+				<property name="password" value="${password}"/>
+			</dataSource>
+		</environment>
+	</environments>
+
+	<!--每个Mapper.xml都需要在核心配置文件中注册-->
+	<mappers>
+		<mapper resource="infosec/dao/UserMapper.xml"/>
+	</mappers>
+
+</configuration> 
+
+
