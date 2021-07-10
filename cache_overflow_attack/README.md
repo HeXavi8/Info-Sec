@@ -76,12 +76,12 @@ int main(int argc, char* argv[])
    
 参考：
 
-1.http://en.wikipedia.org/wiki/Buffer_overflow_protection
-2.http://msdn.microsoft.com/en-us/library/aa290051(v=vs.71).aspx
-3.http://msdn.microsoft.com/zh-cn/library/8dbf701c.aspx
-4.http://blog.csdn.net/chengyun_chu/article/details/4644227
-5.http://msdn.microsoft.com/zh-cn/library/bb384887.aspx
-6.http://www.uml.org.cn/safe/201212174.asp
+1.http://en.wikipedia.org/wiki/Buffer_overflow_protection</br>
+2.http://msdn.microsoft.com/en-us/library/aa290051(v=vs.71).aspx</br>
+3.http://msdn.microsoft.com/zh-cn/library/8dbf701c.aspx</br>
+4.http://blog.csdn.net/chengyun_chu/article/details/4644227</br>
+5.http://msdn.microsoft.com/zh-cn/library/bb384887.aspx</br>
+6.http://www.uml.org.cn/safe/201212174.asp</br>
 
 了解更多对软件代码缺陷的检测技术。
 
