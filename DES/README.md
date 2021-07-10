@@ -30,6 +30,6 @@
 ### 分析雪崩效应
 
 ## 加密过程解析
-[DES过程解析](https://github.com/HeXavi8/Info-Sec/blob/main/DES/DES.pdf)
+[DES过程解析](https://github.com/HeXavi8/Info-Sec/blob/main/des/des.pdf)
 ## 代码
-[DES的Python实现](https://github.com/HeXavi8/Info-Sec/blob/main/DES/DES.ipynb)
+[DES的Python实现](https://github.com/HeXavi8/Info-Sec/blob/main/des/des.ipynb)
